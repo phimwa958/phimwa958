@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">MyPortfolio</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects-page" class="container">
+            <h2>My Projects</h2>
+            <p class="projects-intro">Here are some examples of projects I have developed, showcasing my ability to apply various technologies to create practical applications.</p>
+            
+            <div class="project-detail-card">
+                <h3>Dynamic Review & Recommendation Platform</h3>
+                <p class="project-description">A comprehensive web application built with Django for reviewing places (accommodations, restaurants, attractions), featuring an advanced, <strong>dynamically weighted hybrid recommendation system</strong>. This system intelligently combines Popularity-Based, Content-Based (leveraging <strong>PyThaiNLP for Thai text processing and Word2Vec</strong>), and User-Based Collaborative Filtering models. It dynamically adjusts the weight of each model based on the user's interaction history, providing highly personalized recommendations that evolve with user behavior. The platform also includes a robust content management system, user interaction tracking, and an analytical admin dashboard.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Full user management (registration, login, profile, password reset).</li>
+                    <li>CRUD operations for places, reviews (with image uploads), and comments.</li>
+                    <li>User interaction features: liking, sharing (with activity tracking), and reporting content.</li>
+                    <li><strong>Dynamic Hybrid Recommendation Engine:</strong> Personalizes recommendations based on user activity levels (cold start to highly engaged).</li>
+                    <li><strong>Real-time recommendation boosting</strong> based on user interactions.</li>
+                    <li><strong>Content-Based recommendations using PyThaiNLP and Word2Vec</strong> for semantic understanding of Thai descriptions.</li>
+                    <li>Comprehensive <strong>Admin Dashboard</strong> with graphical analysis of user activity and content popularity.</li>
+                    <li>Support for both Dockerized and manual setup.</li>
+                </ul>
+                <h4>Technologies Used:</h4>
+                <div class="tech-tags">
+                    <span>Django</span>
+                    <span>Django REST Framework</span>
+                    <span>Celery</span>
+                    <span>Redis</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Scikit-learn</span>
+                    <span>Gensim</span>
+                    <span>PyThaiNLP</span>
+                    <span>Bootstrap</span>
+                    <span>Tailwind CSS</span>
+                    <span>Chart.js</span>
+                </div>
+                <a href="../ReviewPlaceAndRecommendationSystem" target="_blank" class="btn-view-project">View Project Files</a>
+            </div>
+
+            <div class="project-detail-card">
+                <h3>MERN-Stack Tarot Reading Platform</h3>
+                <p class="project-description">A full-stack web application built on the MERN stack (MongoDB, Express.js, React, Node.js) that provides users with a personalized tarot reading experience. The platform features a complete user authentication system where users can register, log in, and access private reading pages. The core functionality allows users to perform different types of readings, such as a single-card draw or a three-card spread, with card data and interpretations served from a robust backend API.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Secure user registration and login system using JWT for authentication.</li>
+                    <li>Private, user-specific dashboard area.</li>
+                    <li>Interactive tarot reading page with options for <strong>single-card</strong> and <strong>three-card spreads</strong>.</li>
+                    <li>RESTful API backend built with Node.js and Express to manage user and tarot card data.</li>
+                    <li>Modern, responsive frontend built with React, utilizing Context API for state management.</li>
+                </ul>
+                <h4>Technologies Used:</h4>
+                <div class="tech-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>MongoDB</span>
+                    <span>Mongoose</span>
+                    <span>JWT</span>
+                    <span>Axios</span>
+                    <span>React Router</span>
+                </div>
+                <a href="../taro_web" target="_blank" class="btn-view-project">View Project Files</a>
+            </div>
+
+            <div class="project-detail-card">
+                <h3>Django Blog Platform</h3>
+                <p class="project-description">A full-featured and interactive blogging platform built with Django, designed for a complete content management experience. The application allows authenticated users to create, edit, and manage their posts, including saving them as drafts or publishing them. It supports post categorization, a nested comment system for discussions, and a "like" feature for user engagement. Crucially, the entire platform's functionality is also exposed via a well-structured REST API built with Django REST Framework, enabling headless or third-party client integration.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Full CRUD functionality for blog posts with draft & published status management.</li>
+                    <li>Post categorization and filtering.</li>
+                    <li>Interactive comment system on posts.</li>
+                    <li>"Like" functionality for user engagement.</li>
+                    <li>Comprehensive REST API for all models (Posts, Categories, Comments).</li>
+                    <li>User authentication required for creating and managing content.</li>
+                </ul>
+                <h4>Technologies Used:</h4>
+                <div class="tech-tags">
+                    <span>Django</span>
+                    <span>Django REST Framework</span>
+                    <span>Pillow</span>
+                    <span>SQLite</span>
+                </div>
+                <a href="../blog" target="_blank" class="btn-view-project">View Project Files</a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
