@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li><a href="about.html" id="link-about">About Me</a></li>
                 <li><a href="skills.html" id="link-skills">Skills</a></li>
                 <li><a href="projects.html" id="link-projects">Projects</a></li>
+                <li><a href="certificates.html" id="link-certificates">Certificates</a></li>
                 <li><a href="contact.html" id="link-contact">Contact</a></li>
             </ul>
         </nav>

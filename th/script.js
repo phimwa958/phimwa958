@@ -39,22 +39,23 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <ul>
                 <li><a href="index.html" id="link-home">หน้าแรก</a></li>
-                <li><a href="about.html" id="link-about">เกี่ยวกับฉัน</a></li>
+                <li><a href="about.html" id="link-about">เกี่ยวกับดิฉัน</a></li>
                 <li><a href="skills.html" id="link-skills">ทักษะ</a></li>
                 <li><a href="projects.html" id="link-projects">โปรเจค</a></li>
+                <li><a href="certificates.html" id="link-certificates">ประกาศนียบัตร</a></li>
                 <li><a href="contact.html" id="link-contact">ติดต่อ</a></li>
             </ul>
         </nav>
     `;
 
     const footerHtml = `
-        <p>ขอบคุณที่เข้าเยี่ยมชมแฟ้มสะสมผลงานของฉัน!</p>
+        <p>ขอบคุณที่เข้าเยี่ยมชมแฟ้มสะสมผลงานของดิฉัน!</p>
         <p>
             <a href="mailto:pim2544varee@gmail.com">อีเมล</a> &nbsp;|&nbsp; 
             <a href="https://www.linkedin.com/in/phimwaree-thannirandorn-a402b2325/" target="_blank">LinkedIn</a> &nbsp;|&nbsp; 
             <a href="https://github.com/phimwa958/" target="_blank">GitHub</a>
         </p>
-        <p>&copy; 2026 แฟ้มสะสมผลงานของฉัน</p>
+        <p>&copy; 2026 แฟ้มสะสมผลงานของดิฉัน</p>
     `;
 
     const header = document.querySelector('header');
