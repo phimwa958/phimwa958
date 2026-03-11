@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <section id="projects-page" class="container">
+            <div class="section-header">
+                <h2>My Projects & Experience</h2>
+                <p class="projects-intro">Here are some examples of projects I have developed, with a focus on recent
+                    backend systems, API integration, and full-stack solutions built during my internships.</p>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">Internship Project</div>
+                <h3>Chrome Extension OCR & Firebase Backend</h3>
+                <p class="project-description">Developed a robust Chrome Extension that captures user images and
+                    delegates text extraction to an advanced Large Language Model (LLM), replacing traditional OCR.
+                    Architected the entire centralized Backend using Firebase Functions to securely manage the LLM
+                    processing flow, encompassing authentication, usage rate limiting, and seamless API key lifecycle
+                    management via Firebase Secret Manager.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><strong>LLM Integration:</strong> Offloaded image-to-text processing to external LLM APIs for
+                        heightened accuracy.</li>
+                    <li><strong>Secure Backend Operations:</strong> Implemented Firebase Functions to act as a secure
+                        intermediary layer, preventing direct API key exposure.</li>
+                    <li><strong>Authentication & Rate Limiting:</strong> Enforced user authentication and strict
+                        rate-limiting middlewares to prevent abuse.</li>
+                    <li><strong>CORS Policy Management:</strong> Configured secure cross-origin communication between
+                        the extension and backend.</li>
+                </ul>
+                <h4>Technologies Used:</h4>
+                <div class="tech-tags">
+                    <span>JavaScript (Vanilla)</span>
+                    <span>Firebase Functions (Node.js)</span>
+                    <span>Firebase Admin</span>
+                    <span>Firebase Secret Manager</span>
+                    <span>Axios</span>
+                    <span>JWT</span>
+                    <span>Mocha & Chai</span>
+                    <span>Chrome Extension API</span>
+                </div>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">Internship Project</div>
+                <h3>API Monitoring & Alert System</h3>
+                <p class="project-description">Designed and developed a comprehensive API health monitoring platform
+                    that automatically tracks Endpoint Response Times, HTTP Status Codes, and Errors. The backend
+                    heavily utilizes FastAPI with background schedulers, actively logging data into Supabase
+                    (PostgreSQL). It instantly triggers alerts to engineering teams through LINE Notify and Google Chat
+                    webhooks when thresholds are breached. Included a responsive dashboard for real-time visualization
+                    and log filtering.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><strong>Automated Schedulers:</strong> Asynchronous monitoring of multiple API endpoints
+                        concurrently.</li>
+                    <li><strong>Instant Alerts:</strong> Webhook integrations connecting the backend directly to LINE
+                        and Google Chat upon failure detection.</li>
+                    <li><strong>Real-time Dashboard:</strong> Vite and React-based interface utilizing Recharts for
+                        visualizing API health data and response latency over time.</li>
+                    <li><strong>Manual & Filtered Checks:</strong> Functionality for immediate manual 'Check Now'
+                        operations and extensive historical log filtering.</li>
+                </ul>
+                <h4>Technologies Used:</h4>
+                <div class="tech-tags">
+                    <span>FastAPI (Python)</span>
+                    <span>React & Vite</span>
+                    <span>Supabase (PostgreSQL)</span>
+                    <span>Docker</span>
+                    <span>LINE Notify API</span>
+                    <span>Google Chat API</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">Internship Project</div>
+                <h3>Stock Data Management Optimization</h3>
+                <p class="project-description">Refactored and optimized a legacy stock data processing system using
+                    Google Apps Script. Focused entirely on increasing script execution efficiency by resolving
+                    bottlenecks. Introduced strong data deduplication validation prior to parsing, and significantly
+                    reduced system load by migrating from repetitive row-by-row updates to structured, one-time bulk
+                    "Batch Write" operations.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><strong>Duplicate Prevention:</strong> Added strict validation logic catching duplicate entries
+                        (e.g., matching dates and stock IDs) before processing.</li>
+                    <li><strong>Batch Processing:</strong> Consolidated database/sheet update logic into a single Batch
+                        Process step, drastically reducing network requests and execution time.</li>
+                </ul>
+                <h4>Technologies Used:</h4>
+                <div class="tech-tags">
+                    <span>Google Apps Script</span>
+                    <span>JavaScript (ES6)</span>
+                    <span>Google Spreadsheet API</span>
+                </div>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">University Internship</div>
+                <h3>Web Application Maintenance</h3>
+                <p class="project-description">Collaborated with an established team on a PHP 8 application. Assisted in
+                    revamping application usability, with a primary focus on making the interfaces accessible for screen
+                    reader software, and engineered optimized pagination logic for rendering and handling large datasets
+                    efficiently on the frontend.</p>
+                <h4>Technologies Used:</h4>
+                <div class="tech-tags">
+                    <span>PHP 8</span>
+                    <span>HTML/CSS</span>
+                    <span>Web Accessibility (a11y)</span>
+                </div>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">Graduation Project</div>
+                <h3>Dynamic Review & Recommendation Platform</h3>
+                <p class="project-description">A comprehensive web application built with Django for reviewing places
+                    (accommodations, restaurants, attractions), featuring an advanced, <strong>dynamically weighted
+                        hybrid recommendation system</strong>. This system intelligently combines Popularity-Based,
+                    Content-Based (leveraging <strong>PyThaiNLP for Thai text processing and Word2Vec</strong>), and
+                    User-Based Collaborative Filtering models. It dynamically adjusts the weight of each model based on
+                    the user's interaction history, providing highly personalized recommendations that evolve with user
+                    behavior. The platform also includes a robust content management system, user interaction tracking,
+                    and an analytical admin dashboard.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Full user management (registration, login, profile, password reset).</li>
+                    <li>CRUD operations for places, reviews (with image uploads), and comments.</li>
+                    <li>User interaction features: liking, sharing (with activity tracking), and reporting content.</li>
+                    <li><strong>Dynamic Hybrid Recommendation Engine:</strong> Personalizes recommendations based on
+                        user activity levels (cold start to highly engaged).</li>
+                    <li><strong>Real-time recommendation boosting</strong> based on user interactions.</li>
+                    <li><strong>Content-Based recommendations using PyThaiNLP and Word2Vec</strong> for semantic
+                        understanding of Thai descriptions.</li>
+                    <li>Comprehensive <strong>Admin Dashboard</strong> with graphical analysis of user activity and
+                        content popularity.</li>
+                    <li>Support for both Dockerized and manual setup.</li>
+                </ul>
+                <h4>Technologies Used:</h4>
+                <div class="tech-tags">
+                    <span>Django</span>
+                    <span>Django REST Framework</span>
+                    <span>Celery</span>
+                    <span>Redis</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Scikit-learn</span>
+                    <span>Gensim</span>
+                    <span>PyThaiNLP</span>
+                    <span>Bootstrap</span>
+                    <span>Tailwind CSS</span>
+                    <span>Chart.js</span>
+                </div>
+                <a href="https://github.com/phimwa958/ReviewPlaceAndRecommendationSystem" target="_blank"
+                    class="btn-view-project">View Project</a>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">Personal Project</div>
+                <h3>MERN-Stack Tarot Reading Platform</h3>
+                <p class="project-description">A full-stack web application built on the MERN stack (MongoDB,
+                    Express.js, React, Node.js) that provides users with a personalized tarot reading experience. The
+                    platform features a complete user authentication system where users can register, log in, and access
+                    private reading pages. The core functionality allows users to perform different types of readings,
+                    such as a single-card draw or a three-card spread, with card data and interpretations served from a
+                    robust backend API.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Secure user registration and login system using JWT for authentication.</li>
+                    <li>Private, user-specific dashboard area.</li>
+                    <li>Interactive tarot reading page with options for <strong>single-card</strong> and
+                        <strong>three-card spreads</strong>.
+                    </li>
+                    <li>RESTful API backend built with Node.js and Express to manage user and tarot card data.</li>
+                    <li>Modern, responsive frontend built with React, utilizing Context API for state management.</li>
+                </ul>
+                <h4>Technologies Used:</h4>
+                <div class="tech-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>MongoDB</span>
+                    <span>Mongoose</span>
+                    <span>JWT</span>
+                    <span>Axios</span>
+                    <span>React Router</span>
+                    <span>Context API</span>
+                </div>
+                <a href="https://github.com/phimwa958/taro_web" target="_blank" class="btn-view-project">View
+                    Project</a>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">Personal Project</div>
+                <h3>Django Blog Platform</h3>
+                <p class="project-description">A full-featured and interactive blogging platform built with Django,
+                    designed for a complete content management experience. The application allows authenticated users to
+                    create, edit, and manage their posts, including saving them as drafts or publishing them. It
+                    supports post categorization, a nested comment system for discussions, and a "like" feature for user
+                    engagement. Crucially, the entire platform's functionality is also exposed via a well-structured
+                    REST API built with Django REST Framework, enabling headless or third-party client integration.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Full CRUD functionality for blog posts with draft & published status management.</li>
+                    <li>Post categorization and filtering.</li>
+                    <li>Interactive comment system on posts.</li>
+                    <li>"Like" functionality for user engagement.</li>
+                    <li>Comprehensive REST API for all models (Posts, Categories, Comments).</li>
+                    <li>User authentication required for creating and managing content.</li>
+                </ul>
+                <h4>Technologies Used:</h4>
+                <div class="tech-tags">
+                    <span>Django</span>
+                    <span>Django REST Framework</span>
+                    <span>Pillow</span>
+                    <span>SQLite</span>
+                </div>
+                <a href="https://github.com/phimwa958/blog" target="_blank" class="btn-view-project">View Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

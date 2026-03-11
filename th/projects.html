@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงาน - พอร์ตโฟลิโอของฉัน</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section id="projects-page" class="container">
+            <div class="section-header">
+                <h2>ผลงานและประสบการณ์ของฉัน</h2>
+                <p class="projects-intro">
+                    ด้านล่างนี้เป็นตัวอย่างโครงการที่ฉันได้พัฒนา โดยเน้นไปที่ระบบ Backend การเชื่อมต่อ API
+                    และโซลูชันแบบ Full-Stack ที่สร้างขึ้นระหว่างการฝึกงาน
+                </p>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">โครงการระหว่างฝึกงาน</div>
+                <h3>Chrome Extension OCR และ Firebase Backend</h3>
+                <p class="project-description">
+                    พัฒนา Chrome Extension ที่สามารถจับภาพจากผู้ใช้และส่งไปประมวลผลเพื่อดึงข้อความด้วย
+                    Large Language Model (LLM) แทนการใช้ OCR แบบดั้งเดิม
+                    พร้อมออกแบบ Backend ส่วนกลางทั้งหมดด้วย Firebase Functions
+                    เพื่อจัดการกระบวนการประมวลผล LLM อย่างปลอดภัย
+                    รวมถึงการยืนยันตัวตน การจำกัดอัตราการใช้งาน
+                    และการจัดการ API Key ผ่าน Firebase Secret Manager
+                </p>
+
+                <h4>ความสามารถหลัก:</h4>
+                <ul>
+                    <li><strong>การเชื่อมต่อ LLM:</strong> ใช้ API ของ LLM
+                        ภายนอกสำหรับแปลงภาพเป็นข้อความเพื่อเพิ่มความแม่นยำ</li>
+                    <li><strong>การทำงานของ Backend ที่ปลอดภัย:</strong> ใช้ Firebase Functions
+                        เป็นตัวกลางเพื่อป้องกันการเปิดเผย API Key</li>
+                    <li><strong>การยืนยันตัวตนและจำกัดการใช้งาน:</strong> มีระบบ Authentication และ Rate Limiting
+                        เพื่อป้องกันการใช้งานผิดวัตถุประสงค์</li>
+                    <li><strong>การจัดการ CORS:</strong> ตั้งค่าการสื่อสารข้ามโดเมนระหว่าง Extension และ Backend
+                        อย่างปลอดภัย</li>
+                </ul>
+
+                <h4>เทคโนโลยีที่ใช้:</h4>
+                <div class="tech-tags">
+                    <span>JavaScript (Vanilla)</span>
+                    <span>Firebase Functions (Node.js)</span>
+                    <span>Firebase Admin</span>
+                    <span>Firebase Secret Manager</span>
+                    <span>Axios</span>
+                    <span>JWT</span>
+                    <span>Mocha & Chai</span>
+                    <span>Chrome Extension API</span>
+                </div>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">โครงการระหว่างฝึกงาน</div>
+                <h3>ระบบตรวจสอบ API และแจ้งเตือน</h3>
+
+                <p class="project-description">
+                    ออกแบบและพัฒนาแพลตฟอร์มสำหรับตรวจสอบสถานะ API
+                    โดยสามารถติดตามเวลาการตอบสนองของ Endpoint
+                    รหัสสถานะ HTTP และข้อผิดพลาดต่าง ๆ ได้อัตโนมัติ
+                    Backend ใช้ FastAPI ร่วมกับตัวกำหนดเวลางานแบบ Background
+                    และบันทึกข้อมูลลง Supabase (PostgreSQL)
+                    ระบบสามารถแจ้งเตือนทีมวิศวกรทันทีผ่าน LINE Notify
+                    และ Google Chat Webhook เมื่อเกิดปัญหา
+                    พร้อมแดชบอร์ดสำหรับแสดงผลข้อมูลแบบเรียลไทม์
+                </p>
+
+                <h4>ความสามารถหลัก:</h4>
+                <ul>
+                    <li><strong>ตัวกำหนดเวลาทำงานอัตโนมัติ:</strong> ตรวจสอบ API หลาย Endpoint พร้อมกันแบบ Asynchronous
+                    </li>
+                    <li><strong>การแจ้งเตือนทันที:</strong> เชื่อมต่อ Webhook กับ LINE และ Google Chat
+                        เมื่อพบความล้มเหลว</li>
+                    <li><strong>แดชบอร์ดแบบเรียลไทม์:</strong> ใช้ React และ Recharts แสดงข้อมูลสุขภาพของ API และค่า
+                        Response Time</li>
+                    <li><strong>การตรวจสอบแบบแมนนวลและการกรองข้อมูล:</strong> รองรับคำสั่ง “Check Now”
+                        และสามารถกรองประวัติ Log ย้อนหลังได้อย่างละเอียด</li>
+                </ul>
+
+                <h4>เทคโนโลยีที่ใช้:</h4>
+                <div class="tech-tags">
+                    <span>FastAPI (Python)</span>
+                    <span>React & Vite</span>
+                    <span>Supabase (PostgreSQL)</span>
+                    <span>Docker</span>
+                    <span>LINE Notify API</span>
+                    <span>Google Chat API</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">โครงการระหว่างฝึกงาน</div>
+                <h3>การปรับปรุงระบบจัดการข้อมูลสต็อก</h3>
+
+                <p class="project-description">
+                    ปรับโครงสร้างและเพิ่มประสิทธิภาพระบบประมวลผลข้อมูลสต็อกเดิม
+                    ที่พัฒนาด้วย Google Apps Script
+                    โดยมุ่งเน้นการเพิ่มประสิทธิภาพการทำงานของสคริปต์
+                    แก้ไขปัญหาคอขวดของระบบ
+                    เพิ่มระบบตรวจสอบข้อมูลซ้ำก่อนการประมวลผล
+                    และลดภาระระบบด้วยการเปลี่ยนจากการอัปเดตทีละแถว
+                    เป็นการเขียนข้อมูลแบบ Batch ในครั้งเดียว
+                </p>
+
+                <h4>ความสามารถหลัก:</h4>
+                <ul>
+                    <li><strong>ป้องกันข้อมูลซ้ำ:</strong> ตรวจสอบข้อมูลที่ซ้ำกัน เช่น วันที่และรหัสสินค้า ก่อนประมวลผล
+                    </li>
+                    <li><strong>ประมวลผลแบบ Batch:</strong> รวมขั้นตอนอัปเดตข้อมูลให้ทำครั้งเดียว
+                        ลดจำนวนการเรียกเครือข่ายและเวลาในการทำงาน</li>
+                </ul>
+
+                <h4>เทคโนโลยีที่ใช้:</h4>
+                <div class="tech-tags">
+                    <span>Google Apps Script</span>
+                    <span>JavaScript (ES6)</span>
+                    <span>Google Spreadsheet API</span>
+                </div>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">ฝึกงานมหาวิทยาลัย</div>
+                <h3>การบำรุงรักษาเว็บแอปพลิเคชัน</h3>
+
+                <p class="project-description">
+                    ทำงานร่วมกับทีมพัฒนาระบบบนแอปพลิเคชัน PHP 8
+                    โดยช่วยปรับปรุงการใช้งานของระบบ
+                    เน้นการทำให้หน้าอินเทอร์เฟซสามารถใช้งานร่วมกับโปรแกรม Screen Reader ได้
+                    และพัฒนา Pagination ที่มีประสิทธิภาพ
+                    เพื่อจัดการและแสดงข้อมูลขนาดใหญ่บนฝั่ง Frontend
+                </p>
+
+                <h4>เทคโนโลยีที่ใช้:</h4>
+                <div class="tech-tags">
+                    <span>PHP 8</span>
+                    <span>HTML/CSS</span>
+                    <span>Web Accessibility (a11y)</span>
+                </div>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">โครงการจบการศึกษา</div>
+                <h3>แพลตฟอร์มรีวิวและระบบแนะนำสถานที่อัจฉริยะ</h3>
+
+                <p class="project-description">
+                    เว็บแอปพลิเคชันที่พัฒนาด้วย Django
+                    สำหรับรีวิวสถานที่ เช่น ที่พัก ร้านอาหาร และแหล่งท่องเที่ยว
+                    พร้อมระบบแนะนำแบบ Hybrid ที่ปรับน้ำหนักแบบไดนามิก
+                    ซึ่งผสมผสานระหว่าง Popularity-Based,
+                    Content-Based (ใช้ PyThaiNLP และ Word2Vec)
+                    และ User-Based Collaborative Filtering
+                    โดยระบบจะปรับน้ำหนักของโมเดลตามพฤติกรรมผู้ใช้
+                    เพื่อให้คำแนะนำที่เหมาะสมและเป็นส่วนตัวมากขึ้น
+                </p>
+
+                <h4>ความสามารถหลัก:</h4>
+                <ul>
+                    <li>ระบบจัดการผู้ใช้ครบถ้วน (สมัครสมาชิก เข้าสู่ระบบ โปรไฟล์ รีเซ็ตรหัสผ่าน)</li>
+                    <li>ระบบ CRUD สำหรับสถานที่ รีวิว (อัปโหลดรูปภาพ) และความคิดเห็น</li>
+                    <li>ฟีเจอร์ปฏิสัมพันธ์ผู้ใช้ เช่น กดถูกใจ แชร์ และรายงานเนื้อหา</li>
+                    <li><strong>ระบบแนะนำแบบ Hybrid แบบไดนามิก</strong> ปรับคำแนะนำตามระดับกิจกรรมของผู้ใช้</li>
+                    <li><strong>เพิ่มน้ำหนักคำแนะนำแบบเรียลไทม์</strong> จากพฤติกรรมการใช้งาน</li>
+                    <li><strong>ระบบ Content-Based</strong> ใช้ PyThaiNLP และ Word2Vec
+                        วิเคราะห์ความหมายของข้อความภาษาไทย</li>
+                    <li>แดชบอร์ดผู้ดูแลระบบพร้อมกราฟวิเคราะห์กิจกรรมผู้ใช้</li>
+                    <li>รองรับการติดตั้งทั้งแบบ Docker และแบบปกติ</li>
+                </ul>
+
+                <h4>เทคโนโลยีที่ใช้:</h4>
+                <div class="tech-tags">
+                    <span>Django</span>
+                    <span>Django REST Framework</span>
+                    <span>Celery</span>
+                    <span>Redis</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Scikit-learn</span>
+                    <span>Gensim</span>
+                    <span>PyThaiNLP</span>
+                    <span>Bootstrap</span>
+                    <span>Tailwind CSS</span>
+                    <span>Chart.js</span>
+                </div>
+
+                <a href="https://github.com/phimwa958/ReviewPlaceAndRecommendationSystem" target="_blank"
+                    class="btn-view-project">ดูโครงการ</a>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">โครงการส่วนตัว</div>
+                <h3>แพลตฟอร์มดูดวงไพ่ทาโรต์ (MERN Stack)</h3>
+
+                <p class="project-description">
+                    เว็บแอปพลิเคชันแบบ Full-Stack ที่พัฒนาด้วย MERN Stack
+                    (MongoDB, Express.js, React, Node.js)
+                    เพื่อให้ผู้ใช้สามารถดูดวงไพ่ทาโรต์แบบส่วนตัว
+                    มีระบบสมัครสมาชิกและเข้าสู่ระบบ
+                    และหน้าดูดวงเฉพาะผู้ใช้
+                </p>
+
+                <h4>ความสามารถหลัก:</h4>
+                <ul>
+                    <li>ระบบสมัครสมาชิกและเข้าสู่ระบบที่ปลอดภัยด้วย JWT</li>
+                    <li>แดชบอร์ดส่วนตัวสำหรับผู้ใช้</li>
+                    <li>หน้าดูดวงแบบโต้ตอบ รองรับการเปิดไพ่ <strong>1 ใบ</strong> และ <strong>3 ใบ</strong></li>
+                    <li>Backend แบบ RESTful API ด้วย Node.js และ Express</li>
+                    <li>Frontend สมัยใหม่ด้วย React และ Context API สำหรับจัดการ State</li>
+                </ul>
+
+                <h4>เทคโนโลยีที่ใช้:</h4>
+                <div class="tech-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>MongoDB</span>
+                    <span>Mongoose</span>
+                    <span>JWT</span>
+                    <span>Axios</span>
+                    <span>React Router</span>
+                    <span>Context API</span>
+                </div>
+
+                <a href="https://github.com/phimwa958/taro_web" target="_blank" class="btn-view-project">
+                    ดูโครงการ
+                </a>
+            </div>
+
+            <div class="project-detail-card">
+                <div class="project-subtitle">โครงการส่วนตัว</div>
+                <h3>แพลตฟอร์มบล็อกด้วย Django</h3>
+
+                <p class="project-description">
+                    แพลตฟอร์มบล็อกที่พัฒนาด้วย Django
+                    รองรับการจัดการเนื้อหาแบบครบถ้วน
+                    ผู้ใช้ที่เข้าสู่ระบบสามารถสร้าง แก้ไข และจัดการบทความ
+                    บันทึกเป็นฉบับร่างหรือเผยแพร่ได้
+                    พร้อมระบบหมวดหมู่ คอมเมนต์แบบลำดับชั้น และระบบกดถูกใจ
+                    อีกทั้งยังมี REST API สำหรับเชื่อมต่อกับระบบภายนอก
+                </p>
+
+                <h4>ความสามารถหลัก:</h4>
+                <ul>
+                    <li>ระบบ CRUD สำหรับบทความ พร้อมสถานะ Draft และ Published</li>
+                    <li>ระบบหมวดหมู่และการกรองบทความ</li>
+                    <li>ระบบคอมเมนต์โต้ตอบในบทความ</li>
+                    <li>ระบบกดถูกใจเพื่อเพิ่มการมีส่วนร่วม</li>
+                    <li>REST API สำหรับโมเดลทั้งหมด เช่น Posts, Categories, Comments</li>
+                    <li>ต้องเข้าสู่ระบบก่อนสร้างหรือจัดการเนื้อหา</li>
+                </ul>
+
+                <h4>เทคโนโลยีที่ใช้:</h4>
+                <div class="tech-tags">
+                    <span>Django</span>
+                    <span>Django REST Framework</span>
+                    <span>Pillow</span>
+                    <span>SQLite</span>
+                </div>
+
+                <a href="https://github.com/phimwa958/blog" target="_blank" class="btn-view-project">
+                    ดูโครงการ
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
