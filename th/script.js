@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <a href="https://www.linkedin.com/in/phimwaree-thannirandorn-a402b2325/" target="_blank">LinkedIn</a> &nbsp;|&nbsp; 
             <a href="https://github.com/phimwa958/" target="_blank">GitHub</a>
         </p>
-        <p>&copy; 2026 แฟ้มสะสมผลงานของดิฉัน</p>
+        <p>&copy; ${new Date().getFullYear()} phimwa958. All rights reserved.</p>
     `;
 
     const header = document.querySelector('header');
