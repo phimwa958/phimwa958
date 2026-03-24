@@ -1,68 +1,57 @@
-# Phimwaree Thannirandorn
+# Completely blind new graduate software developer with experience in Full-Stack Architecture, AI/LLM Integration, and Data Engineering. Seeking a software developer position in an organization that fosters growth, embraces diversity, and provides opportunities to apply skills in creating meaningful and impactful solutions.
 
-I am a completely blind New Grad Software Developer with experience at Vulcan Coalition. Specializing in Full-Stack Architecture, AI/LLM Integration, and Data Engineering, I am seeking a new software developer position in a company that offers a supportive culture and growth environment and embraces diversity and inclusivity for people with disabilities.
+## Skills & Technologies
+**Backend:** Node.js, Express, Python (FastAPI, Django), PHP, REST APIs, Microservices, Firebase  
+**Frontend:** HTML, CSS, JavaScript (ES6+), React, Tailwind, Bootstrap, Responsive, Accessibility (a11y)  
+**Database:** MySQL, PostgreSQL, SQLite, MongoDB, Firestore  
+**Cloud & Tools:** Docker, Git, CI/CD, Vercel, Redis, Celery, Postman  
+**Data & AI:** Pandas, NumPy, Scikit-learn, NLP, LLM Integration, Recommendation Systems  
 
-## Skills & Proficiencies
-- **Backend Development & Architecture:** Node.js, Express.js, Python (FastAPI, Django), PHP 8, RESTful APIs, System Design, Microservices, Firebase (Functions, Firestore, Admin, Secret Manager)
-- **Frontend Development & UI/UX:** HTML5, CSS3, JavaScript (ES6+, DOM Manipulation), React.js (Context API, React Router), Vite, Tailwind CSS, Bootstrap, Responsive Design, Web Accessibility (a11y), Chrome Extensions (Manifest V3), Axios, Recharts, Chart.js
-- **Database Management & Cloud Storage:** Relational Databases (MySQL, PostgreSQL / Supabase, SQLite), NoSQL Databases (MongoDB / Mongoose, Firestore), Object Storage (Firebase Storage, Supabase Storage)
-- **Data Science & AI Integration:** LLM Integration & Prompt Engineering, Natural Language Processing (PyThaiNLP, Word2Vec, Gensim), Data Analysis (Pandas, NumPy, Scikit-learn), Recommendation Systems (Hybrid filtering), PyTorch, Pillow
-- **Testing & Quality Assurance:** Automated unit and integration testing with Pytest, Mocha & Chai, Postman, curl
-- **DevOps & Tools:** Git, GitHub, CI/CD pipelines, Vercel, Docker, Containerization, Celery, Redis, Google Apps Script, Google Spreadsheet API, Virtual Environments (venv), Jira, VS Code, Gemini CLI
+---
 
-## Final Project
+## Experience
+**Software Developer Intern** | Vulcan Coalition | Dec 2025 – Feb 2026
+- **Chrome Extension OCR & Firebase Backend:** Replaced traditional OCR with an LLM-powered Chrome Extension. Architected a centralized, secure Firebase Functions backend with JWT auth, rate-limiting, and Secret Manager.
+  - **Technologies:** JavaScript Firebase Functions, Firebase Admin, Axios, JWT, Mocha & Chai, Chrome Extension API
+- **API Monitoring & Alert System:** Built an asynchronous FastAPI health monitoring platform tracking response metrics across multiple endpoints. Created a React/Vite dashboard using Recharts and integrated webhook alerts via LINE and Google Chat.
+  - **Technologies:** FastAPI, React, Supabase, Docker, LINE Notify, Google Chat webhook, Tailwind CSS
+- **Stock Data Management Optimization:** Significantly reduced execution time of a legacy Google Apps Script system by implementing data deduplication and bulk batch-write operations. Helps reduce working time from the original 7 minutes++, reducing the time to 2 minutes.
+  - **Technologies:** Google Apps Script, Google Spreadsheet API
+
+**Web Application Maintenance Intern** | Suan Dusit University | Nov 2025
+- Collaborated on team(5 person) with  PHP application to revamp usability, specifically optimizing Web Accessibility (a11y) for screen readers and engineering efficient frontend pagination logic.
+  - **Technologies:** PHP, HTML/CSS, Web Accessibility (a11y)
+
+## Projects
 **Dynamic Review & Recommendation Platform** (Graduation Project)
-- Built a comprehensive web application with Django for reviewing places, featuring an advanced dynamically weighted hybrid recommendation system.
-- Intelligently combined Popularity-Based, Content-Based (leveraging PyThaiNLP for Thai text processing and Word2Vec), and User-Based Collaborative Filtering models.
-- Implemented real-time recommendation boosting based on user activity levels (cold start to highly engaged).
-- Included full user management, CRUD operations, social features (liking, sharing, reporting), and an analytical Admin Dashboard.
-- **Technologies:** Django, Django REST Framework, Celery, Redis, MySQL, Docker, Pandas, NumPy, Scikit-learn, Gensim, PyThaiNLP, Bootstrap, Tailwind CSS, Chart.js
+- Developed a Django-based review platform featuring a dynamically weighted hybrid recommendation engine combining Popularity-Based, Content-Based (PyThaiNLP/Word2Vec), and Collaborative Filtering models.
+  - **Technologies:** Django, Celery, Redis, MySQL, Docker, Pandas, NumPy, Scikit-learn, Gensim, PyThaiNLP, Bootstrap, Tailwind CSS, Chart.js
 
-## Personal Projects
 **MERN-Stack Tarot Reading Platform** 
-- Developed a full-stack web application on the MERN stack with JWT authentication for a personalized tarot reading experience.
-- Featured interactive reading pages for single-card and three-card spreads, relying on a RESTful API backend (Node.js/Express).
-- **Technologies:** React, Node.js, Express.js, MongoDB, Mongoose, JWT, Axios, React Router
+- Built a personalized, full-stack tarot reading application featuring single and three-card spreads, backed by a RESTful API and JWT authentication.
+  - **Technologies:** React, Express.js, MongoDB, JWT, Axios
+
+---
 
 **Django Blog Platform**
-- Built a full-featured blogging platform allowing users to create, manage (drafts/published), categorize, and interact with content (nested comments, likes).
-- Exposed all functionality via a well-structured REST API built with Django REST Framework for potential headless integration.
-- **Technologies:** Django, Django REST Framework, Pillow, SQLite
+- Created a fully-featured blogging system with drafts, categorization, nested comments, and likes. Exposed all functionality via a comprehensive REST API.
+  - **Technologies:** Django, Pillow, SQLite
 
-## Software Developer Intern – Vulcan Coalition (December 2025 – February 2026)
-**Chrome Extension OCR & Firebase Backend**
-- Developed a robust Chrome Extension capturing user images and delegating text extraction to an advanced Large Language Model (LLM), replacing traditional OCR.
-- Architected the entire centralized backend using Firebase Functions to securely manage the LLM processing flow.
-- Enforced user authentication, strict rate-limiting middlewares, and secure API key lifecycle management via Firebase Secret Manager to prevent abuse.
-- **Technologies:** JavaScript (Vanilla), Firebase Functions (Node.js), Firebase Admin, Axios, JWT, Mocha & Chai, Chrome Extension API
-
-**API Monitoring & Alert System**
-- Designed and developed a comprehensive API health monitoring platform that automatically tracks Endpoint Response Times, HTTP Status Codes, and Errors.
-- Utilized FastAPI with background schedulers for asynchronous monitoring of multiple API endpoints concurrently, logging data into Supabase (PostgreSQL).
-- Integrated webhooks connecting the backend directly to LINE and Google Chat for instant alerts upon failure detection.
-- Developed a Vite and React-based real-time dashboard utilizing Recharts for visualizing API health data and response latency.
-- **Technologies:** FastAPI (Python), React & Vite, Supabase (PostgreSQL), Docker, LINE Notify API, Google Chat API, Tailwind CSS
-
-**Stock Data Management Optimization**
-- Refactored and optimized a legacy stock data processing system using Google Apps Script, focusing on increasing script execution efficiency.
-- Introduced strong data deduplication validation to catch duplicate entries before processing.
-- Reduced system load drastically by migrating from repetitive row-by-row updates to structured, one-time bulk "Batch Write" operations, minimizing network requests and execution time.
-- **Technologies:** Google Apps Script, JavaScript (ES6), Google Spreadsheet API
-
-## University Internship – Suan Dusit University(November 2025)
-**Web Application Maintenance**
-- Collaborated with an established team on a PHP 8 application, assisting in revamping application usability.
-- Focused primarily on making the interfaces accessible for screen reader software (Web Accessibility / a11y).
-- Engineered optimized pagination logic for rendering and handling large datasets efficiently on the frontend.
-- **Technologies:** PHP 8, HTML/CSS, Web Accessibility (a11y)
+---
 
 ## Education
-Suan Dusit University
-Bachelor of Science in Computer Science, Faculty of Science and Technology
+**Suan Dusit University** | Bachelor of Science in Computer Science, Faculty of Science and Technology (Cumulative GPA: 3.56)
+
+---
 
 ## Contact Information
-• Telephone: +66 83 284 4160
-• Email: pim2544varee@gmail.com
-• GitHub: github.com/phimwa958
-• LinkedIn: linkedin.com/in/phimwaree-thannirandorn-a402b2325
-• Facebook: facebook.com/Phimwaree.Thannirandon
+**Phimwaree Thannirandorn**
+- โทรศัพท์: +66 83 284 4160  
+- อีเมล: pim2544varee@gmail.com  
+- GitHub: https://github.com/phimwa958  
+- LinkedIn: https://www.linkedin.com/in/phimwaree-thannirandorn-a402b2325  
+- Facebook: https://facebook.com/Phimwaree.Thannirandon  
+
+---
+
+If interested or need more information  Please contact me via the contact information above. Happy to participate in the interview and present additional work. Thank you.
