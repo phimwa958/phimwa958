@@ -1,4 +1,6 @@
-# นักพัฒนาซอฟต์แวร์จบใหม่ตาบอดสนิท มีประสบการณ์ด้าน Full-Stack Architecture, การบูรณาการ AI/LLM และ Data Engineering กำลังมองหาตำแหน่งงานด้านนักพัฒนาซอฟต์แวร์ในองค์กรที่ส่งเสริมการเติบโต เปิดรับความหลากหลาย และให้โอกาสในการใช้ทักษะเพื่อสร้างผลงานที่มีคุณค่า
+### นักพัฒนาซอฟต์แวร์ (Software Developer) | ผู้ให้ความสำคัญกับความเท่าเทียมในการเข้าถึงเทคโนโลยี (Accessibility Advocate)
+
+ดิฉันเป็นนักพัฒนาซอฟต์แวร์จบใหม่ตาบอดโดยสิ้นเชิงและมีประสบการณ์ฝึกงานที่ Vulcan Coalition ด้วยประสบการณ์ด้านสถาปัตยกรรม Full-Stack การบูรณาการ AI/LLM และวิศวกรรมข้อมูล ตอนนี้ดิฉันกำลังมองหาตำแหน่งนักพัฒนาซอฟต์แวร์ในองค์กรที่ส่งเสริมการเติบโต ยอมรับความหลากหลาย และให้ความสำคัญกับศักยภาพของแต่ละบุคคลอย่างเท่าเทียมกันค่ะ
 
 ---
 
@@ -6,7 +8,7 @@
 **Backend:** Node.js, Express, Python (FastAPI, Django), PHP, REST APIs, Microservices, Firebase  
 **Frontend:** HTML, CSS, JavaScript (ES6+), React, Tailwind, Bootstrap, Responsive, Accessibility (a11y)  
 **Database:** MySQL, PostgreSQL, SQLite, MongoDB, Firestore  
-**Cloud & Tools:** Docker, Git, CI/CD, Vercel, Redis, Celery, Postman  
+**Cloud & Tools:** Docker, Git, CI/CD, Vercel, Redis, Celery, Postman, vs code , gemini cli, Antigravity, jira, GCP
 **Data & AI:** Pandas, NumPy, Scikit-learn, NLP, LLM Integration, Recommendation Systems  
 
 ---
@@ -17,7 +19,7 @@
   * **เทคโนโลยี:** JavaScript, Firebase Functions, Firebase Admin, Axios, JWT, Mocha & Chai, Chrome Extension API
 * **ระบบตรวจสอบ API และแจ้งเตือน:** พัฒนาแพลตฟอร์มด้วย FastAPI แจ้งเตือนสถานะแบบ Asynchronous บันทึกลง Supabase พร้อมสร้างแดชบอร์ดแสดงผลผ่าน React และเชื่อมต่อ Webhook แจ้งเตือนไปที่ LINE และ Google Chat
   * **เทคโนโลยี:** FastAPI, React, Supabase, Docker, LINE Notify API, Google Chat Webhook, Tailwind CSS
-* **การปรับปรุงระบบจัดการข้อมูลสต็อก:** แก้ไขเพิ่มประสิทธิภาพให้กับระบบเก่าด้วย Google Apps Script โดยทำระบบตรวจสอบข้อมูลซ้ำ และเปลี่ยนวิธีอัปเดตข้อมูลเป็น Batch Write ช่วยลดระยะเวลาทำงานจากเดิม7นาที++ ลดระยะเวลาเหลือ 2 นาที
+* **การปรับปรุงระบบจัดการข้อมูลสต็อก:** Reduced execution time from over 7 minutes to under 2 minutes by implementing data deduplication and batch processing.
   * **เทคโนโลยี:** Google Apps Script, Google Spreadsheet API
 
 **นักศึกษาฝึกงาน** | มหาวิทยาลัยสวนดุสิต | พฤศจิกายน 2568
@@ -45,14 +47,11 @@
 ---
 
 ## ข้อมูลการติดต่อ
-**พิมพ์วรีย์ ฐานนิรันดร**
-- โทรศัพท์: +66 83 284 4160  
-- อีเมล: pim2544varee@gmail.com  
-- GitHub: https://github.com/phimwa958  
-- LinkedIn: https://www.linkedin.com/in/phimwaree-thannirandorn-a402b2325  
-- Facebook: https://facebook.com/Phimwaree.Thannirandon  
-
----
-
-หากสนใจหรือต้องการข้อมูลเพิ่มเติม สามารถติดต่อได้ผ่านช่องทางด้านบน  
+หากสนใจหรือต้องการข้อมูลเพิ่มเติม สามารถติดต่อได้ผ่านช่องทางด้านล่าง  
 ยินดีเข้าร่วมสัมภาษณ์และนำเสนอผลงานเพิ่มเติม ขอบคุณค่ะ
+**พิมพ์วรีย์ ฐานนิรันดร**
+โทรศัพท์: +66 83 284 4160  
+อีเมล: pim2544varee@gmail.com  
+GitHub: https://github.com/phimwa958  
+LinkedIn: https://www.linkedin.com/in/phimwaree-thannirandorn-a402b2325  
+Facebook: https://facebook.com/Phimwaree.Thannirandon  

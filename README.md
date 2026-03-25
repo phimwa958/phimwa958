@@ -1,36 +1,31 @@
-# My Personal Portfolio Website
+# 💻 Phimwaree Thannirandorn
+### Software Developer | Accessibility Advocate
 
-This repository contains the source code for my personal portfolio website, designed to showcase my skills, projects, and professional journey as a developer.
+I'm a developer focused on building inclusive and efficient software. I enjoy working across the full stack and integrating intelligent solutions to solve real-world problems.
 
-## ✨ Features
+---
 
-- **Home Page:** A welcoming introduction and quick overview of my expertise.
-- **About Me:** Detailed insights into my background, educational journey, and development philosophy.
-- **Skills:** A comprehensive breakdown of my technical skills and the technologies I specialize in.
-- **Projects:** In-depth descriptions of key projects I've worked on, highlighting features, technologies used, and challenges overcome.
-- **Contact:** A functional contact form to get in touch.
+## 🛠️ Tech Stack
 
-## 🛠️ Technologies Used
+- **Languages:** JavaScript (ES6+), Python, PHP, SQL
+- **Backend:** Node.js, Express, FastAPI, Django
+- **Frontend:** React, HTML, CSS (Tailwind)
+- **Specialized:** LLM-powered Solutions, Web Accessibility (a11y)
 
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Styling:** Custom CSS with modern design principles (responsive layout, animations).
+---
 
-## 🚀 How to View
+## 📂 Web Portfolio
+For a complete look at my projects, experience, and certificates, please visit:
+### [phimwa958.github.io/phimwa958](https://phimwa958.github.io/phimwa958/)
 
-To view this portfolio locally, simply open the `index.html` file in your preferred web browser.
+---
 
-```bash
-# Navigate to the portfolio directory
-cd C:\Users\pim25\Documents\GitHub\New folder\phimwa958\ 
+## 🤝 Connect
 
-# Open the index.html file in your browser
-start index.html # On Windows
-# open index.html # On macOS
-# xdg-open index.html # On Linux
-```
+- [LinkedIn](https://www.linkedin.com/in/phimwaree-thannirandorn-a402b2325)
+- [Email](mailto:pim2544varee@gmail.com)
+- [Facebook](https://facebook.com/Phimwaree.Thannirandon)
 
-## 📬 Contact
+---
 
-Feel free to reach out via the contact form on the website or through the links provided on the [Contact page](contact.html).
-
-```
+> "Logic over complexity. Accessibility for all."
